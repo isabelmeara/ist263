@@ -1,0 +1,8 @@
+body{font-family:Verdana, Geneva, Tahoma, sans-serif;}
+
+h1,h2{ color: darkorange;}
+h1{font-size: 2em}
+h2{font-size:1.5em}
+
+.graystripe{background-color:lightgrey}
+.whitestripe{background-color:ghostwhite}

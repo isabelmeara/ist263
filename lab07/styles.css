@@ -3,9 +3,10 @@ body{
     background-color: #F7F6F2;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+h1{color: #3E6259}
 nav{background-color: #E8E5D9;
 padding: 10px;
-margin-bottom: 30px}
+margin-bottom: 30px;}
 nav a{color:#254F6A}
 nav a:hover{color: #3A7CA5;
     background-color: #F7F6F2}

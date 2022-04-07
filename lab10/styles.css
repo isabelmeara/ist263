@@ -28,12 +28,12 @@ a:hover{color:#254F6A;}
 .float{float:right;}
 .clear{clear: both;}
 
-.row1, .row2{display:flex; padding:10px; background-color:#ffffff; border-radius: 2em; margin: 30px;}
+.row1, .row2{display:flex; padding:10px; background-color:#ffffff; border-radius: 2em; margin: 30px; flex-wrap: wrap;}
 .clear {clear: both;}
 .form, .contact, .map, .linkedin{margin-left: 20px;}
 .contact{flex:1; margin-left: 20px; }
 .box {flex:1; margin-left: 20px;}
-.map{flex:1; padding-top:10px; padding-right:10px;}
+.map{flex:1; padding-top:10px; padding-right:10px; flex-wrap:flex;}
 .linkedin{flex:3}
 .form{margin-right:30px;}
 
@@ -54,4 +54,22 @@ a:hover{color:#254F6A;}
     border-radius: 1em;
     padding-left: 15px;
     margin-left: 10px;
+    
 }
+
+/*lab10*/
+
+.indeximage{
+    max-width:100%;
+}
+
+
+
+@media only screen and (max-width:600px) {
+    nav a{width:100%; display:block;}
+    span{display:none; padding:10px;}
+
+
+
+}
+

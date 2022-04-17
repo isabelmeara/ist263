@@ -73,14 +73,5 @@ a:hover{color:#254F6A;}
 
 }
 
-/*lab 11 */
-#skip { /* # sign means looking for a tag with id of skip */
-    position: absolute;
-    left: -999px;
-    background-color:orange;
-    padding:5px;
-}
-#skip:focus {
-    left:10px;
-}
+/
 

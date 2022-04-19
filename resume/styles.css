@@ -1,0 +1,77 @@
+body{
+    color: #0d0c08;
+    background-color: #F7F6F2;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right:50px;
+    margin-left: 20px;
+    font-size: 1em;
+}
+h1{
+    color: #3E6259;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+}
+
+
+.icon{
+    width: 75px;
+}
+nav{background-color: #E8E5D9;
+padding: 10px;
+margin-bottom: 30px;}
+nav a{color:#254F6A}
+nav a:hover{color: #3A7CA5;
+    background-color: #F7F6F2}
+
+a{color: #0E1C36; }
+a:hover{color:#254F6A;}
+
+.float{float:right;}
+.clear{clear: both;}
+
+.row1, .row2{display:flex; padding:10px; background-color:#ffffff; border-radius: 2em; margin: 30px; flex-wrap: wrap;}
+.clear {clear: both;}
+.form, .contact, .map, .linkedin{margin-left: 20px;}
+.contact{flex:1; margin-left: 20px; }
+.box {flex:1; margin-left: 20px;}
+.map{flex:1; padding-top:10px; padding-right:10px; flex-wrap:flex;}
+.linkedin{flex:3}
+.form{margin-right:30px;}
+
+
+.red, .green{
+    display:flex;
+}
+.green{
+    flex: 3;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.blue{
+    background-color:#254F6A;
+    color: #E8E5D9;
+    flex: 1;
+    border-radius: 1em;
+    padding-left: 15px;
+    margin-left: 10px;
+    
+}
+
+/*lab10*/
+
+.indeximage{
+    width:100%;
+}
+
+
+
+@media only screen and (max-width:600px) {
+    nav a{width:100%; display:block;}
+    span{display:none; padding:10px;}
+
+}
+
+
+

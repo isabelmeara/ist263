@@ -9,7 +9,6 @@ span{
 
 
 
-
 .map_intro{
     display:flex;
     flex-wrap:wrap;
@@ -62,6 +61,8 @@ nav a:hover{color:#FFD9DA}
     padding-bottom: 35px;
 }
 
+
+
 .mercer_description{
     padding-left: 50px;
     padding-top: 115px;
@@ -69,6 +70,7 @@ nav a:hover{color:#FFD9DA}
     min-width: 300px;
     padding-right:6px;
     flex:2;
+    font-size: 1.25em;
 }
 
 
@@ -103,9 +105,14 @@ footer{
 }
 
 h4{text-align:right;}
-.contact_info{text-align:right;}
+.contact_info{
+    text-align:right;
+}
 
-.about{padding-left:30px;}
+.about{
+    padding-left:30px;
+    padding-right:20px;
+}
 
 h1, h2, h3, h4{
     font-family: 'Anybody', cursive;
@@ -135,5 +142,18 @@ p{
     left:10px;
 }
 
+@media only screen and (max-width:600px) {
+    .mercer-description{padding-top: -50px;}
+
+}
+
+iframe{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    min-width:400px;
+}
 
 

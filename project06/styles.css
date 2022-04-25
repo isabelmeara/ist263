@@ -1,5 +1,139 @@
 body{
-    color: #1B0E0E;
-    background-color: #60A561;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #A8B181;
+    margin: -3px; 
 }
+
+span{
+    color:#FFD9DA;
+}
+
+
+
+
+.map_intro{
+    display:flex;
+    flex-wrap:wrap;
+    margin-right: 125px;
+    margin-left: 125px;
+    padding-bottom: 35px;
+}
+
+.culture1, .culture2 {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.culture1 div, .culture2 div, .map_intro div{
+    flex:1;
+}
+
+
+
+.culture2{
+    padding-top:5%;
+    padding-bottom:3%;
+}
+
+
+
+nav{
+    background-color:#F6F7F2;
+    padding: 15px;
+    font-family: 'Anybody', cursive;
+    text-align: right;
+
+}
+
+nav a:link{
+    color: #2A3C24;
+    text-decoration:none;
+}
+nav a:visited{color: #2A3C24;}
+nav a:hover{color:#FFD9DA}
+
+.welcome{
+    width:100%;
+}
+
+.toptext{
+    margin-right: 125px;
+    margin-left: 125px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.mercer_description{
+    padding-left: 50px;
+    padding-top: 115px;
+    display:block;
+    min-width: 300px;
+    padding-right:6px;
+    flex:2;
+}
+
+
+
+
+
+.culture{
+    padding-top: 25px;
+    padding-left: 75px;
+    padding-bottom:15px;
+    padding-right: 20px;
+    background-color: #2A3C24;
+    color: #F6F7F2;
+
+}
+
+.culture_description{
+    padding-right:20%;
+    padding-top:5%;
+}
+
+footer{
+    display:flex;
+    padding-left: 20px;
+    padding-top:15px;
+    padding-right:10px;
+}
+
+.contact{
+    justify-content:flex-end;
+    flex:1;
+}
+
+h4{text-align:right;}
+.contact_info{text-align:right;}
+
+.about{padding-left:30px;}
+
+h1, h2, h3, h4{
+    font-family: 'Anybody', cursive;
+}
+
+h2{
+    color:#FFD9DA;
+}
+
+p{
+    font-family: 'GFS Neohellenic', sans-serif;
+}
+
+.culture1 div{
+    margin-right: 20px;
+}
+
+#skip{
+    position: absolute;
+    left: -999px;
+    padding:5px;
+    background-color:#A8B181;
+    color:black;
+}
+
+#skip:focus {
+    left:10px;
+}
+
+
+

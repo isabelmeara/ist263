@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participation</title>
+    <script>
+        function Right () {
+            document.getElementById("rightanswer").innerHTML = "Congrats! That is correct.";
+            document.getElementById("background_color").style.backgroundColor = "#B1BCA0";
+        }
+    </script>
+</head>
+
+
+<body id="background_color">
+    <p>I'm tired.</p>
+    <p id="rightanswer" onclick="Right();">True</p>
+    <p id="wronganswer">False</p>
+</body>
+
+
+</html>

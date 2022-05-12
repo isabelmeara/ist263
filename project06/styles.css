@@ -344,12 +344,19 @@ p {font-family: 'GFS Neohellenic', sans-serif;}
 
     .culture{
         padding-top: 25px;
-        padding-left: 20px;
+        padding-left: 65px;
         padding-bottom:50px;
         padding-right: 20px;
     }
 
     footer{
         display:block;
+        padding-bottom:25px;
+    }
+
+    .rain div, .sun div, .restaurant_recs div{
+        margin-right:7%;
+        margin-left:6%;
+        margin-bottom: 5%;
     }
 }

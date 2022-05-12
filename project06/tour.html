@@ -5,50 +5,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Tour -- Central Jerz</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@500&family=GFS+Neohellenic&family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+    <script>
+        function toggleNav () {
+       if (document.getElementById("navlinks").style.getPropertyValue("display") == 'block') {
+            document.getElementById("navlinks").style.display = "none";
+        }
+
+        else {
+            document.getElementById("navlinks").style.display = "block";
+    }
+
+}
+
+
+
+    </script>
+
 </head>
 <body>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="tour.html">A Tour!</a>
-        <a href="thingstodo.html">Things to Do</a>
+        <img src="proj_images/hamburger.png" alt="hamburger icon" id="hamburger" onclick="toggleNav();">
+        <div id="navlinks">
+            <a href="index.html">Home</a><span> |</span>
+            <a href="tour.html">A Tour!</a><span> |</span>
+            <a href="thingstodo.html">Things to Do</a>
+        </div>
     </nav>
 
 
-    <p>
-        Take a tour of each of the town(s) I grew up in! I’ve alluded to it but New Jersey is the most densely 
-        populated state, meaning that I live less than ten miles from about eight or so distinctly different towns, 
-        four of which I frequent regularly. Here they are!
-    </p>
+    <div id="tourintro">
+        <h1>TAKE A TOUR!</h1>
 
-    <p><strong>1. Pennington</strong></p>
-    <img src="proj_images/pennington.png" alt="Pennington town">
-    <p>
-        This is where I’m from. It’s the tiniest of these towns, with the main strip of businesses only being around 15. There is a small library independent from the county right in the town, and the elementary school is in the middle of it to, making it a walkable community. It is also walkable from the district middle and high school, meaning kids often flood into the town after school and go to some of the food shops. There are a couple strip malls just outside the town as well that the kids can get to, and some incredible food there. Best and easiest takeout food out of any of these. 
-    </p>
-    
-
-
-    <p><strong>2. Hopewell</strong></p>
-    <img src="proj_images/hopewell.png" alt="Hopewell town">
-    <p>
-        This is another town in my district. This was once named the most Vermont-like town in all of New Jersey. More colorful and Victorian architecture than the other picks on this list and an affinity for Antique stores. Seriously, like 4 or 5 antique stores in a town with around 20 businesses. It’s quaint but offers the worst coffee shop and restaurant options. 
-    </p>
-
-    <p><strong>3. Princeton </strong></p>
-    <img src="proj_images/princeton.png" alt="Princeton town">
-    <p>
-        This is the town surrounding Princeton University, featuring the most local businesses and college-town vibe out of any of the towns on this list. You would likely come here for events at the university, coffee, lunch or dinner, or a movie at the Princeton Garden Theater. It offers the most places to shop and eat, and you get to walk around campus if it’s nice enough. Top school in the country!!
-    </p>
-
-    <p><strong>4. Lambertville</strong></p>
-    <img src="proj_images/lambertville.png" alt="Lambertville town">
-    <p>
-        This town is right on the Delaware River, meaning you can go there for even more antique stores and better coffee, and stare at a body of water! There is also a sister-town to Lambertville called New Hope, but I can’t write about it here because it’s in Pennsylvania. Part of the culture of this part of New Jersey is appreciating the Pennsylvania border, especially the river.
-    </p>
+        <p>
+            These are the town(s) I grew up in! I’ve alluded to it but New Jersey is the most densely 
+            populated state, meaning that I live less than ten miles from about eight or so distinctly different towns, 
+            four of which I frequent regularly. Here they are!
+        </p>
+    </div>
 
 
 
+    <div  class="pennington">
+        <div class="townpic">
+            <h2>1. Pennington</h2>
+            <img src="proj_images/pennington.png" alt="Pennington town">
+        </div>
+        <div class="townbio">
+            <p>
+                This is where I’m from. It’s the tiniest of these towns, with the main strip of businesses only being around 15. There is a small library independent from the county right in the town, and the elementary school is in the middle of it to, making it a walkable community. It is also walkable from the district middle and high school, meaning kids often flood into the town after school and go to some of the food shops. There are a couple strip malls just outside the town as well that the kids can get to, and some incredible food there. Best and easiest takeout food out of any of these. 
+            </p>
+        </div>
+    </div>
 
+
+
+    <div class="hopewell">
+        <div class="townpic">
+            <h2>2. Hopewell</h2>
+            <img src="proj_images/hopewell.png" alt="Hopewell town">
+        </div>
+        <div class="townbio">
+            <p>
+                This is another town in my district. This was once named the most Vermont-like town in all of New Jersey. More colorful and Victorian architecture than the other picks on this list and an affinity for Antique stores. Seriously, like 4 or 5 antique stores in a town with around 20 businesses. It’s quaint but offers the worst coffee shop and restaurant options. 
+            </p>
+        </div>
+    </div>
+
+    <div class="princeton">
+        <div class="townpic">
+            <h2>3. Princeton</h2>
+            <img src="proj_images/princeton.png" alt="Princeton town">
+        </div>
+        <div class="townbio">
+            <p>
+                This is the town surrounding Princeton University, featuring the most local businesses and college-town vibe out of any of the towns on this list. You would likely come here for events at the university, coffee, lunch or dinner, or a movie at the Princeton Garden Theater. It offers the most places to shop and eat, and you get to walk around campus if it’s nice enough. Top school in the country!!
+            </p>
+        </div>
+    </div>
+
+    <div class="lambertville">
+        <div class="townpic">
+            <h2>4. Lambertville</h2>
+            <img src="proj_images/lambertville.png" alt="Lambertville town">
+        </div>
+        <div class="townbio">
+            <p>
+                This town is right on the Delaware River, meaning you can go there for even more antique stores and better coffee, and stare at a body of water! There is also a sister-town to Lambertville called New Hope, but I can’t write about it here because it’s in Pennsylvania. Part of the culture of this part of New Jersey is appreciating the Pennsylvania border, especially the river.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_pic">
+            <img src="proj_images/me.png" alt="Picture of girl">
+        </div>
+
+        <div class="about">
+            <h3>About</h3>
+            <p>I'm Izzy Meara! I've lived in New Jersey my whole life and wanted to share the love. CHECK IT OUT!!</p>
+        </div>
+
+        <div class="contact">
+            <h4>Questions?</h4>
+
+            <p class="contact_info">
+                @isabel.m<br>
+                isabelmeara@gmail.com
+            </p>
+        
+        </div>
+    </footer>
 
     
 </body>

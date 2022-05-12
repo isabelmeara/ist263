@@ -14,7 +14,7 @@ span{
     flex-wrap:wrap;
     margin-right: 125px;
     margin-left: 125px;
-    padding-bottom: 35px;
+    padding-bottom: 50px;
 }
 
 .culture1, .culture2 {
@@ -61,8 +61,6 @@ nav a:hover{color:#FFD9DA}
     padding-bottom: 35px;
 }
 
-
-
 .mercer_description{
     padding-left: 50px;
     padding-top: 115px;
@@ -74,9 +72,6 @@ nav a:hover{color:#FFD9DA}
 }
 
 
-
-
-
 .culture{
     padding-top: 25px;
     padding-left: 75px;
@@ -84,7 +79,6 @@ nav a:hover{color:#FFD9DA}
     padding-right: 20px;
     background-color: #2A3C24;
     color: #F6F7F2;
-
 }
 
 .culture_description{
@@ -97,6 +91,7 @@ footer{
     padding-left: 20px;
     padding-top:15px;
     padding-right:10px;
+    background-color: #F6F7F2;
 }
 
 .contact{
@@ -118,17 +113,13 @@ h1, h2, h3, h4{
     font-family: 'Anybody', cursive;
 }
 
-h2{
-    color:#FFD9DA;
-}
+h2{color:#FFD9DA;}
 
-p{
-    font-family: 'GFS Neohellenic', sans-serif;
-}
+h3{color:black;}
 
-.culture1 div{
-    margin-right: 20px;
-}
+p {font-family: 'GFS Neohellenic', sans-serif;}
+
+.culture1 div{margin-right: 20px;}
 
 #skip{
     position: absolute;
@@ -142,18 +133,236 @@ p{
     left:10px;
 }
 
+@media only screen and (max-width: 400px) {
+    .toptext{
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+
+    .map_intro{
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+
+    .culture{
+        padding-top: 25px;
+        padding-left: 20px;
+        padding-bottom:50px;
+        padding-right: 20px;
+
+
+    
+
+
+
+
+    
+}
+
 @media only screen and (max-width:600px) {
     .mercer-description{padding-top: -50px;}
+    #hamburger{display:block;}
+    nav{text-align:left;}
+    #navlinks a {display:block;}
+    #navlinks{display:none;}
+    span{display:none;}
+}
 
 }
 
-iframe{
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+/* A TOUR */
+
+.pennington, .hopewell, .princeton, .lambertville{
+    display:flex;
+    flex-wrap: wrap;
+    margin:3%;
+    background-color:#2A3C24;
+
+}
+
+.townpic{
+    padding-left:9%;
+    padding-top:2%;
+    padding-bottom: 3%;
+    flex:1;
+}
+
+.townbio{
+    padding-top: 125px;
+    padding-right: 9%;
+    padding-bottom:30px;
+    color:#F6F7F2;
+    font-size: 1.25em;
+    flex:2;
+    align-content:center;
+    margin-left:50px;
+    min-width: 300px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .townbio{
+        padding-top:40px;
+    }  
+ 
+}
+
+@media only screen and (max-width: 841px) {
+    .townbio{padding-top:1px;}   
+}
+
+
+#tourintro{
+    padding-right:4%;
+    padding-left: 3%;
+    padding-top:3%;
+}
+
+
+
+/*THINGS TO DO!*/
+
+
+#things_title{
+    padding-left: 5%;
+}
+
+.rain, .sun, .coffee {
+    display:flex;
+    flex-wrap:wrap;
+    padding-left:6%;
+}
+
+
+
+.restaurant_recs{
+    display:flex;
+    flex-wrap:wrap;
+    padding-top: 3%;
+    padding-left:6%;
+}
+
+
+
+.rain div, .sun div, .restaurant_recs div{
+    flex:1;
+    margin-right:9%;
+    margin-bottom: 5%;
+}
+
+
+
+.coffee{
+    justify-content:center;
+    background-color: #2A3C24;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.coffee h2{
+    padding-left:5%;
+    font-size:2em;
+}
+
+.coffee ul, .cofee li{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#F6F7F2;
+}
+
+.coffee img{
+    width:100%;
+ 
+}
+
+#coffee_title{
+    font-size: 1.5em;
+    font-family:'Anybody', cursive;
+    color:#A8B181;
+    margin-left: 3%;
+}
+
+
+.weather_titles{
+    font-size:3.5em;
+    margin-left:3%;
+    font-family:'Anybody', cursive;
+    color:#2A3C24;
+    text-align: center;
+}
+
+
+.meal_titles{
+    font-size:1.5em;
+    padding-left:110px;
+    
+}
+
+.breakfast_title{
+    font-size:1.5em;
+    padding-left: 75px;
+}
+
+.business_text{
+
+    background-color:#F6F7F2;
+    padding-top: 4px;
+    padding-left: 8px;
+    padding-right:8px;
+    padding-bottom:4px;
+
+}
+
+.rain h2{color:#2A3C24;}
+
+
+
+.flip-box {
+    background-color: transparent;
+    width: 150px;
+    height: 150px;
+    perspective: 1000px; 
+  }
+  
+.flip-box-inner {
+    position: relative;
     width: 100%;
-    min-width:400px;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+  
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+  
+
+.flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+}
+  
+.flip-box-front {
+    background-color: #bbb;
+    color: black;
+}
+  
+.flip-box-back {
+    background-color: #A8B181;
+    color: black;
+    padding-right:3px;
+    padding-left:5px;
+    transform: rotateY(180deg);
 }
 
+#hamburger {
+    width:40px;
+    display:none;
+    
+}
 
+#navlinks a {
+    margin: 5px;
+}

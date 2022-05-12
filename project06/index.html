@@ -11,6 +11,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@500&family=GFS+Neohellenic&family=Libre+Baskerville&display=swap" rel="stylesheet">
 
+    <script>
+        function toggleNav () {
+       if (document.getElementById("navlinks").style.getPropertyValue("display") == 'block') {
+            document.getElementById("navlinks").style.display = "none";
+        }
+
+        else {
+            document.getElementById("navlinks").style.display = "block";
+    }
+
+}
+
+    </script>
+
 
 
 </head>
@@ -18,10 +32,13 @@
 
     <div class="navstyle">
         <nav>
-            <a href="index.html" tabindex="1">Home</a><span> |</span>
-            <a href="tour.html" tabindex="2">A Tour!</a><span> |</span>
-            <a href="thingstodo.html" tabindex="3">Things to Do</a>
-            <a href="#content" id="skip" tabindex="4">Skip to Content</a>
+            <img src="proj_images/hamburger.png" alt="hamburger icon" id="hamburger" onclick="toggleNav();">
+            <div id="navlinks">
+                <a href="index.html" tabindex="1">Home</a><span> |</span>
+                <a href="tour.html" tabindex="2">A Tour!</a><span> |</span>
+                <a href="thingstodo.html" tabindex="3">Things to Do</a>
+                <a href="#content" id="skip" tabindex="4">Skip to Content</a>
+            </div>
        </nav>
     </div>
 
